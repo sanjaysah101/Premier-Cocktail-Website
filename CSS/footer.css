@@ -1,0 +1,45 @@
+footer{
+    background-color: #2D3E50;
+    color: #CBD6E2;
+}
+.about{
+    background-color: transparent;
+}
+footer .wrapper{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+footer .wrapper .about h2{
+    font-size: 2rem;
+    /* background-color: pink; */
+}
+ul{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+.social-icons ul li i{
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.fa-facebook:hover{
+    color: #0883E0;
+}
+.fa-instagram:hover{
+    color: #C90079;
+}
+.fa-twitter:hover{
+    color: #1A98ED;
+}
+.fa-youtube:hover{
+    color: #ff0000;
+}
+
+.copyright{
+    border-top: 1px solid #CBD6E2;
+    padding: 1rem;
+    text-align: center;
+}

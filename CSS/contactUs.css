@@ -1,0 +1,89 @@
+/* contact US */
+
+.contactUS, .services, .aboutUs{
+    background-color: #f6f6f6;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    
+}
+.title h2{
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    text-transform: uppercase;
+    text-decoration: underline wavy orange;
+    /* background-color: yellow; */
+}
+
+.title p{
+    /* background-color: goldenrod; */
+    /* padding-bottom: 1rem; */
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+.wrapper{
+    display: flex;
+    /* background-color: #FF6A3D; */
+    /* padding: 2rem; */
+    justify-content: space-between;
+}
+
+.visitUs{
+    width: 40%;
+    background-color: #FF6A3D;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.visitUs a{
+    color: black;
+    margin: .4rem 0;
+}
+.visitUs address{
+    margin: .4rem 0;
+}
+
+/* Contact Us Form Design */
+
+.contactUsForm{
+    /* background-color: hotpink; */
+    width: 60%;
+    padding: 2rem;
+}
+.contactUsForm h3{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.contactUS .form-group{
+    margin: 1rem 0;
+}
+
+.contactUS .form-group label{
+    display: block;
+    width: 100%;
+    margin: .2rem 0;
+    color: var(--text-color);
+}
+.contactUS .form-group input{
+    width: 100%;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+}
+
+.contactUsForm .btn{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}

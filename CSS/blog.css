@@ -1,0 +1,70 @@
+.blog-header{
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    margin-top: 10vh;
+}
+.blog-header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.tags{
+    background-color: rgb(82, 128, 128);
+    width: fit-content;
+    padding: .3rem .5rem;
+}
+.recentBlog{
+    /* The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties. */
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: pink;
+    background: linear-gradient(34deg, rgba(4,1,43,1) 0%, rgba(42,42,198,0.5665616588432247) 17%, rgba(0,212,255,0.45451684091605393) 100%), url(../Assets/Images/bg.jpg);
+}
+.tags a{
+    color: #fff;
+}
+.tags:hover{
+    background-color: rgb(46, 95, 95);
+}
+
+.blogDesc h3{
+    font-size: 2rem;
+    margin: 10px 0;
+    width: 80%;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.blogDesc h3:hover{
+    color: #FF6A3D;
+}
+
+.blog-header .recent-post{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+
+}
+.recentBlog-1{
+    background: linear-gradient(90deg, rgba(0,36,17,0.6337885495995272) 0%, rgba(8,167,208,0.29485297536983546) 11%, rgba(53,232,185,0.5889706224286589) 100%) ,url('../Assets/Images/cocktail1.png');
+}
+.recentBlog-2{
+    background: linear-gradient(90deg, rgba(0,36,17,0.6337885495995272) 0%, rgba(8,167,208,0.29485297536983546) 11%, rgba(93,232,53,0.5889706224286589) 100%), url("../Assets/Images/cocktail2.jpg")
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .blog-header{
+        grid-template-columns: auto;
+    }
+    .recentBlog {
+        grid-area: auto;
+    }
+}
