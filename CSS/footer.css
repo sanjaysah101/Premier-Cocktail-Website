@@ -20,7 +20,7 @@ ul{
     display: flex;
     justify-content: center;
 }
-.social-icons ul li i{
+footer .social-icons ul li i, .social-icons ul li i{
     color: white;
     padding: 1rem;
     font-size: 1.5rem;

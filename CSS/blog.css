@@ -1,11 +1,16 @@
-.blog-header{
-    min-height: 600px;
+/* *{
+    border: 1px solid red;
+} */
+.blog-header, .recent-blogs{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     padding: 10px;
     background-color: #f6f6f6;
     margin-top: 10vh;
+}
+.blog-header {
+    min-height: 600px;
 }
 .blog-header div{
     display: flex;
@@ -57,6 +62,73 @@
     
 }
 
+
+/* ****************** Recent Blogs ******************  */
+
+.recent-blogs{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    /* background-color: #FF6A3D; */
+}
+/* .recent-blogs div{
+    background-color: #FF6A3D;
+} */
+
+.moreBlogs{
+    display: grid;
+    grid-gap: 10px;
+}
+.moreBlogs .post{
+    /* background-color: cyan; */
+    height: 15rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* grid-gap: 10px; */
+    /* border: 1px solid red; */
+}
+/* .moreBlogs div .img{
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.moreBlogs .post img{
+    height: 100%;
+    width: 100%;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    object-fit: cover;
+}
+.moreBlogs .post .blog-content{
+    /* width: 60%; */
+    height: 100%;
+    padding: 1rem;
+    background-color: rgb(235, 220, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+
+.moreBlogs .post .blog-content h3{
+    width: 100%;
+    /* background-color: red; */
+}
+.blog-content .tags {
+    background-color: #FF6A3D;
+}
+
+.right{
+    /* margin-top: 100px; */
+    position: relative;
+    /* height: fit-content; */
+}
+.right-content{
+    position: sticky;
+    background-color: red;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10vh;
+}
 @media screen and (max-width: 768px) {
     .container{
         width: 100%;
@@ -66,5 +138,9 @@
     }
     .recentBlog {
         grid-area: auto;
+    }
+    .recent-blogs, .moreBlogs .post{
+        grid-template-columns: auto;
+        height: auto;
     }
 }
