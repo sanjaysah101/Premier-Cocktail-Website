@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    /* font-weight: 300; */
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #cccccc;
+    --text-color: #272929;
+    --transparent-bg: rgba(0,0,0,.8);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 16px;
+    background-color: var(--bg-color);
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header{
+    width: 100%; 
+    /* background-color: black; */
+    height: 720px;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 9%;
+    background-color: var(--transparent-bg);
+}
+
+nav .logo{
+    float: left;
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo h2{
+    text-transform: uppercase;   
+    color: #FF6A3D;
+    font-size: 1.5rem;
+}
+
+nav .nav-list{
+    float: right;
+    /* background-color: hotpink; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .nav-list a{
+    /* display: block; */
+    /* padding: 1em; */
+    /* font-size: 1rem; */
+    font-weight: bold;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+nav .nav-list a:hover{
+    color: #FF6A3D;
+}
+
+#nav-toggle{
+    position: absolute;
+    /* top: -100px; */
+    display: none;
+}
+nav .icon-hamburger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+nav .icon-hamburger .line{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+
+/* ----------------------Hero Section start --------------------------- */
+
+.hero-image {
+    position: relative;
+    background-color: var(--bg-color); /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background: linear-gradient(34deg, rgba(4,1,43,1) 0%, rgba(42,42,198,0.5665616588432247) 17%, rgba(0,212,255,0.45451684091605393) 100%), url(../Images/bg.jpg);
+}
+
+
+.hero-text img{
+    min-width: 12rem;
+    width: 50%;
+    overflow: hidden;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-text .title{
+    color: #FF6A3D;
+    font-size: 3rem;
+    margin-bottom: .8rem;
+}
+.hero-text .sub-title{
+    font-size: 1.2rem;
+    color: #E1E2E2;
+    margin-bottom: 2rem;
+}
+.btn{
+    /* margin-top: 1rem; */
+    background-color: #FF6A3D;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.hero-image .btn:hover{
+    color: #FF6A3D;
+    background-color: white;
+}
+
+/* ------------------------ Hero Section end ----------------- */
+
+/* About Us */
+.about-img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    /* background-color: hotpink; */
+    /* min-height: 400px; */
+}
+.about-img img{
+    width: 100%;
+    /* max-height: 70%; */
+    object-fit: cover;
+}
+.aboutUsContent p{
+    /* background-color: green; */
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+
+
+/* Services */
+/* 
+.image-slide{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img{
+    width: 100%;
+    margin: 1rem;
+    max-height: 90%;
+    background-color: red;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+/* .img-2{
+    background-image: url('../Assets/Images/cocktail1.png');
+}
+.img-3{
+    background-image: url('../Assets/Images/cocktails\ glass.jpg');
+} */
+
+/* .img:hover{
+    height: 100%;
+    width: 33%;
+} */
+
+/* Contact Us */
+
+/* contact US */
+
+.contactUS, .services, .aboutUs, .recentImage{
+    background-color: #f6f6f6;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    
+}
+.title h2{
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    text-transform: uppercase;
+    text-decoration: underline wavy orange;
+    /* background-color: yellow; */
+}
+
+.title p{
+    /* background-color: goldenrod; */
+    /* padding-bottom: 1rem; */
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+.wrapper{
+    display: flex;
+    /* background-color: #FF6A3D; */
+    /* padding: 2rem; */
+    justify-content: space-between;
+}
+
+.visitUs{
+    width: 40%;
+    background-color: #FF6A3D;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.visitUs a{
+    color: black;
+    margin: .4rem 0;
+}
+.visitUs address{
+    margin: .4rem 0;
+}
+
+/* Contact Us Form Design */
+
+.contactUsForm{
+    /* background-color: hotpink; */
+    width: 60%;
+    padding: 2rem;
+}
+.contactUsForm h3{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.contactUS .form-group{
+    margin: 1rem 0;
+}
+
+.contactUS .form-group label{
+    display: block;
+    width: 100%;
+    margin: .2rem 0;
+    color: var(--text-color);
+}
+.contactUS .form-group input{
+    width: 100%;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+}
+
+.contactUsForm .btn{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Fotter */
+footer{
+    background-color: #2D3E50;
+    color: #CBD6E2;
+}
+.about{
+    background-color: transparent;
+}
+footer .wrapper{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .wrapper .about h2{
+    font-size: 2rem;
+    /* background-color: pink; */
+}
+ul{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+footer .social-icons ul li i, .social-icons ul li i{
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.fa-facebook:hover{
+    color: #0883E0;
+}
+.fa-instagram:hover{
+    color: #C90079;
+}
+.fa-twitter:hover{
+    color: #1A98ED;
+}
+.fa-youtube:hover{
+    color: #ff0000;
+}
+
+.copyright{
+    border-top: 1px solid #CBD6E2;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+/* Mobile  */
+
+/* ------------------------ Hero Section end ----------------- */
+
+@media screen and (max-width: 940px) {
+    
+    nav .logo h2{
+        font-size: 1.2rem;
+    }
+
+    .hero-text .title{
+        font-size: 2rem;
+    }
+    .hero-text .sub-title{
+        font-size: 1rem;
+    }
+    /* About Section */
+    .about-img{
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav .logo{
+        float: none; /* Because I have used float left before */
+        width: auto;
+        justify-content: center;
+    }
+    nav .nav-list{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 9%;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        background-color: var(--transparent-bg);
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .nav-list a{
+        font-size: 20px;
+    }
+    nav :checked ~ .nav-list{
+        bottom: 0;
+    }
+    nav .icon-hamburger{
+        display: block;
+    }
+
+    nav :checked ~ .icon-hamburger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked ~ .icon-hamburger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked ~ .icon-hamburger .line:nth-child(2){
+        opacity: 0;
+    }
+    /* About Us */
+    .about-img{
+        grid-template-columns: auto;
+    }
+    /* Services  */
+    .image-slide{
+        flex-direction: column;
+        /* width: 100%; */
+        height: 900px;
+        align-content: space-between;
+    }
+    .image-slide .img{
+        width: 90%;
+    }
+    .image-slide .img:hover{
+        width: 100%;
+        
+    }
+
+    /* contact Us */
+    .container {
+        width: 95%;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .visitUs {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .contactUsForm{
+        width: 100%;
+    }
+}
